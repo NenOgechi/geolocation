@@ -14,23 +14,23 @@ pipeline {
                 sh 'mvn install'
                 sh 'mvn package'
             }
-        }
-        stage('test') {
+       }
+          stage('test') {
             steps {
                 sh 'mvn test'
 
             }
         }
-        stage('test') {
+          stage('test') {
             steps {
                 echo 'test'
-            
-            }
-        }
-        stage('deploy') {
+
+           }
+        } 
+          stage('deploy') {
             steps {
                 echo 'deploy'
-            
+                
             }
         }
     }
